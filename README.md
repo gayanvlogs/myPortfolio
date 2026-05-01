@@ -1,2 +1,1 @@
-# myPortfolio
-Sri Lanka’s Premier Freelance Marketplace.
+# My Website Project

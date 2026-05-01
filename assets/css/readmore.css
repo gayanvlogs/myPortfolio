@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+:root {
+    --bg-color:#080808;
+    --second-bg-color:#101010;
+    --text-color: white;
+    --main-color:#ea580c;
+    --box-color: #2e2e2e;
+}
+
+html {
+    font-size: 50%;
+    overflow-x: hidden;
+}
+
+span {
+    background: linear-gradient(
+        #df8908 10%,
+        #ff1d15 100%
+      );
+    background-clip: text;
+    color: transparent;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem 15%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+.backhome-btn{
+    display: flex;
+    align-items: end;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+
+#menu-icon {
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: none; 
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    padding: 1rem;
+    background: transparent;
+    border-radius: 0%;
+    color: var(--main-color);
+    margin: 1rem 0.5rem;
+    transition: 0.3s ease-in-out;
+    margin-top: 2rem;
+
+}
+
+.social-icons a:hover{
+     transform: scale(1.5);
+
+}
+
+
+.section{
+    
+     min-height: 100vh;
+     padding: 10rem 15%;
+}
+.readmore{
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+}
+
+.readmore-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.readmore-container h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+    margin-top: 10rem;
+}
+
+.readmore-container h3 {
+
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 1;
+} 
+.readmore-container p{
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    line-height: 1.2;
+}
+
+
+.other-image{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150%;   
+    border-radius: 50%;
+}
+
+.other-image img{
+    max-width: 90%;        
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 2rem 4rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 3rem;
+    font-size: 2.0rem;
+    color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    font-weight: 600;
+    margin-top: 6rem;
+    transition: 0.3s ease-in-out;
+
+}
+.btn:hover{
+        transform: scale(1.2);
+        box-shadow: 0 0 25px var(--main-color);
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar{
+    width: 20px;
+   
+}
+::-webkit-scrollbar-thumb{
+ background-color:var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+}
+
+/* Working Expirence 1 */
+
+.expirence{
+text-align: center;
+font-size: 6rem;
+margin-top: 5rem;
+}
+
+.expirence{
+    background-color: var(--bg-color);
+    color: rgb(255, 255, 255);
+}
+
+.expirence h2{
+    color: var(--text-color);
+
+}
+.exp-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5rem;
+    align-items: center;
+    padding: 5rem ;
+    margin: 0 25rem;
+}
+.exp-box{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--box-color);
+height: 500px;
+border-radius: 3rem;
+border: 5px transparent;
+margin-top: 0;
+transition: 0.4s ease-in-out;
+}
+
+.exp-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    padding: 3rem;
+    height: 100%;
+}
+.exp-info h4{
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+.exp-info h6{
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 600;
+
+}
+.exp-info p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* other qualifications */
+
+.otherqlf{
+text-align: center;
+font-size: 6rem;
+margin-top: 5%                      ;
+}
+
+.otherqlf{
+    background-color: var(--bg-color);
+    color: rgb(255, 255, 255);
+}
+
+.otherqlf h2{
+    color: var(--text-color);
+
+}
+
+.otherqlf h3{
+
+    color: var(--text-color);
+    font-size: 3rem;
+    margin-top: 0;
+    
+}
+
+.qlf-container{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(1200, 1fr));
+    gap: 5rem;
+    align-items: center;
+    padding: 2rem ;
+    margin: 0 25rem;
+    
+}
+.qlf-box{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--main-color);
+height: auto;
+border-radius: 3rem;
+border: 5px transparent;
+transition: 0.4s ease-in-out;
+padding: 20px 40px;
+
+}
+
+.qlf-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+.qlf-info h4{
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    font-weight: 600;
+}
+.qlf-info h6{
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 600;
+
+}
+.qlf-info p{
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 1.3;
+     
+}
+
+/* Footer Section */
+
+    .footer {
+
+        background-color: var(--second-bg-color);
+        padding: 30px 0;
+    }
+
+    footer .social-icons{
+        text-align: center;
+    }
+
+    .footer ul {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .footer ul li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .footer ul li a {
+        color: white;
+        border: 3px solid transparent;
+        border-radius: 5px;
+        padding: 0.8rem;
+        transition: 0.25s;
+    }
+     .footer ul li a:hover {
+        color: var(--main-color);
+    }
+    .footer .copyright{
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 1.0rem;
+    }
+
+-- Other Experience --
+
+.otherexp{
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+}
+
+.otherexp h2{
+display: flex;
+align-items: center;
+font-size: 2%;
+    
+}
+
+.otherexp p{
+    font-size: 2rem;
+
+
+}
+
+
